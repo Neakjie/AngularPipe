@@ -1,6 +1,8 @@
 $color-blue:lightblue;
 $break-point:960px;
 .outer {
+    border: 1px solid black;
+    border-radius: 10px;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -8,11 +10,15 @@ $break-point:960px;
     justify-content: center;
     align-items: center;
     .date {
+        border: 1px solid black;
+        border-radius: 10px;
         justify-content: center;
         align-items: center;
         width: 50%;
     }
     .other {
+        border: 1px solid black;
+        border-radius: 10px;
         width: 50%;
     }
 }
@@ -26,7 +32,7 @@ $break-point:960px;
             width: 100%;
         }
         .other {
-            width: 0;
+            display: none;
         }
     }
 }
