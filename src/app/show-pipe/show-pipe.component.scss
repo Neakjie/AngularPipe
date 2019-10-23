@@ -1,0 +1,32 @@
+$color-blue:lightblue;
+$break-point:960px;
+.outer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .date {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .other {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: $break-point) {
+    .outer {
+        background-color: $color-blue;
+        .date {
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+        }
+        .other {
+            width: 0;
+        }
+    }
+}
